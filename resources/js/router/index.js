@@ -9,6 +9,7 @@ import NotFound from '../pages/404';
 import PropTypes from 'prop-types';
 import Home from '../pages/Home';
 import Profile from '../pages/Profile';
+import Test from '../pages/Test';
 import AuthRoute from './AuthRoute';
 import { connect } from 'react-redux';
 import { setLoading } from '../actions/loading';
@@ -43,6 +44,7 @@ class App extends Component {
             <GuestRoute path="/forgot-password" component={ForgotPassword} />
             <GuestRoute path="/password/reset/:token" component={ResetPassword} />
             <AuthRoute path="/home" component={Home} />
+            <AuthRoute path="/test" component={Test} />
             <AuthRoute path="/profile/:id" component={Profile} />
             <Route component={NotFound} />
           </Switch>

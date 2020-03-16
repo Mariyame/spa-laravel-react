@@ -84,7 +84,7 @@ class AuthNav extends Component {
                 onClick={() => this.closeMobileNav()}
                 className="px-4 py-3 lg:py-0">
                 <NavLink
-                  to='/home'
+                  to='/test'
                   className="capitalize text-2xl font-bold lg:text-sm lg:font-light text-gray-700 underline lg:no-underline">
                   Messages
                 </NavLink>
